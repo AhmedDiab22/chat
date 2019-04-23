@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../img/bg.jpg');
+    background-attachment: fixed;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin-top: 10px;
+    font-family: monospace;
+    text-align: right;
+}
+a{
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+a:hover{
+    color: #777a7e;
+    text-decoration: none;
+}
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #046de4;
+}
+span{
+    line-height: 40px;
+    background-color: #3392e6;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+.headchat{
+    background-color: #046de4;
+    padding: 3px;
+    color: #fff;
+    position: relative;
+}
+ul li{
+    padding: 0 5px;
+    margin-top: 10px;
+    display: inline-block
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.nav-link{
+    padding: 0;
+}
+.dropdown-menu{
+    position: absolute;
+    transform: translate3d(5px, 30px, 0px);
+    top: 15px !important;
+    left: -30px !important;
+    will-change: transform;
+    text-align: right
+}
+.dropdown-menu:before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 28px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.dropdown-item{
+    font-size: 15px;
+}
+.dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #046de4;
+}
+.bodychat span.r:after{
+    content: '';
+    position: absolute;
+    top: 13px;
+    right: 69px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #3392e6;
+    border-right: 7px solid transparent;
+}
+.bodychat span.l:after{
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 65px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-right: 7px solid #3392e6;
+}
+.msg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.msg input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    position: relative;
+    max-width: 55%;
+    border: none;
+    float: right;
+    outline: none;
+    overflow-x: auto;
+}
+.icons{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 45%;
+    background-color: #fff;
+    
+}
+.icons i{
+    cursor: pointer;
+    transition: all .5s ease-in-out
+}
+.icons i:hover{
+    color: #046de4;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+
