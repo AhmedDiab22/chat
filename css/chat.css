@@ -31,15 +31,20 @@ img{
 span{
     line-height: 40px;
     background-color: #3392e6;
-    padding: 5px 15px;
+    padding: 0 15px;
     border-radius: 5px;
     color: #fff;
+    display: inline-block;
 }
 .headchat{
     background-color: #046de4;
     padding: 3px;
     color: #fff;
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 ul li{
     padding: 0 5px;
@@ -83,31 +88,18 @@ ul li a{
     text-decoration: none;
     background-color: #046de4;
 }
-.bodychat span.r:after{
-    content: '';
-    position: absolute;
-    top: 13px;
-    right: 69px;
-    border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-left: 7px solid #3392e6;
-    border-right: 7px solid transparent;
-}
-.bodychat span.l:after{
-    content: '';
-    position: absolute;
-    top: 13px;
-    left: 65px;
-    border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-left: 7px solid transparent;
-    border-right: 7px solid #3392e6;
+.bodychat{
+    margin-top: 100px;
 }
 .msg{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: auto
+}
+.l{
+    
 }
 .msg input{
     width: 100%;
@@ -138,5 +130,6 @@ ul li a{
 button{
     background-color: transparent;
     border: none;
+    overflow: scroll
 }
 
