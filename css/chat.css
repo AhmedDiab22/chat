@@ -152,6 +152,7 @@ span{
     top: 0;
     width: 100%;
     z-index: 9999;
+    box-shadow: 0px 4px 3px rgb(138, 135, 135)
 }
 ul li{
     padding: 0 5px;
@@ -216,6 +217,8 @@ ul li a{
     border: none;
     float: right;
     outline: none;
+    border-top: 1px solid rgba(88, 88, 88, 0.425);
+    border-left: 1px solid rgba(88, 88, 88, 0.425);
     overflow-x: auto;
     resize: none
 }
